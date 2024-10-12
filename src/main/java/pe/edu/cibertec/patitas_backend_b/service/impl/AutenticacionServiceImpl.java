@@ -55,8 +55,6 @@ public class AutenticacionServiceImpl implements AutenticacionService {
     @Override
     public Date cerrarSesionUsuario(LogoutRequestDTO logoutRequestDTO) throws IOException {
 
-
-
         Date fechaLogout = null;
         Resource resource = resourceLoader.getResource("classpath:auditoria.txt");
         Path rutaArchivo = Paths.get(resource.getURI());
